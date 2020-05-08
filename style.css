@@ -32,7 +32,7 @@ body{
 }
 
 #searchButton, #pickArtist, #pickNumResults, #error {
-    background-color: darkorchid;
+    background-color: blue;
     color: white;
     text-align: center;
 }
