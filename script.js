@@ -1,4 +1,3 @@
-//02/05/2017
 $(document).ready(function(){
     $("#pickArtist").mouseenter(function(){
         $("#pickArtist").animate({
