@@ -1,30 +1,4 @@
-$(document).ready(function(){
-    $("#pickArtist").mouseenter(function(){
-        $("#pickArtist").animate({
-            height: '+=50px',
-            width: '+=50px'
-        });
-    });
-    $("#pickArtist").mouseleave(function(){
-        $("#pickArtist").animate({
-            height: '-=50px',
-            width: '-=50px'
-        },'fast');
-    });
-    $("#pickNumResults").mouseenter(function(){
-        $("#pickNumResults").animate({
-            height: '+=50px',
-            width: '+=50px'
-        });
-    });
-    $("#pickNumResults").mouseleave(function(){
-        $("#pickNumResults").animate({
-            height: '-=50px',
-            width: '-=50px'
-        },'fast');
-    });
-
-    $('#searchButton').on('click', function(){
+   $('#searchButton').on('click', function(){
         var artist = document.getElementById("pickArtist").value;
         console.log(artist);
         var numToDisplay = document.getElementById("pickNumResults").value;
