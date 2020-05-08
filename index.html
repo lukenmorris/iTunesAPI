@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>ITunes API Project</title>
+
+</head>
+
+<body>
+<h1>Artist's Top iTunes Songs</h1>
+
+<div id="content">
+<select id="pickArtist">
+    <option value="selectArtist">Select an Artist</option>
+    <option class="artist" value="jack+johnson">Jack Johnson</option>
+    <option class="artist" value="kendrick+lamar">Kendrick Lamar</option>
+    <option class="artist" value="miley+cyrus">Miley Cyrus</option>
+    <option class="artist" value="bob+marley">Bob Marley</option>
+    <option class="artist" value="sean+kingston">Sean Kingston</option>
+    <option class="artist" value="michael+jackson"> Michael Jackson</option>
+</select>
+<select id="pickNumResults">
+    <option value="selectNumResults">How Many Results?</option>
+    <option value="10">10</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+    <option value="75">75</option>
+    <option value="100">100</option>
+    <option value="150">150</option>
+    <option value="200">200</option>
+</select>
+<br><br>
+<button id="searchButton">Search Artist's Top Songs</button>
+<br><br>
+<div id="resultTable"></div>
+</div>
+<div id="error"></div>
+</div>
+
+</body>
+
+
+</html>
