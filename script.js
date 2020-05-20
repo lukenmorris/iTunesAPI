@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
     $("#search").click(function(){
-        var musician= $("#musician").val();
+        var artist= $("#artist").val();
 
 
-         $.ajax({
-            url:"https://itunes.apple.com/search?term=" + musician,
+        $.ajax({
+            url:"https://itunes.apple.com/search?term=" + artist,
             dataType: "jsonp",
             success: callBack,
         })
@@ -38,10 +38,10 @@ $(document).ready(function(){
             table += "<td>" + "Album: " +album + "</td>";
             table += "<td>" + "Rank: "+ ranknumber + "</td>";
             table += "</tr>";
-            }
-            table += "</table>";
+        }
+        table += "</table>";
 
-            $("#list").append(table);
+        $("#list").append(table);
 
     }
 
