@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("#search").click(function(){
-        var musician= $("#musician").val();
+        var artist= $("#musician").val();
 
 
          $.ajax({
